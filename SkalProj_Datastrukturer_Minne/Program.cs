@@ -13,11 +13,12 @@ namespace SkalProj_Datastrukturer_Minne
 
             while (true)
             {
-                Console.WriteLine("Please navigate through the menu by inputting the number \n(1, 2, 3 ,4, 0) of your choice"
+                Console.WriteLine("Please navigate through the menu by inputting the number \n(1, 2, 3 ,4, 5, 0) of your choice"
                     + "\n1. Examine a List"
                     + "\n2. Examine a Queue"
                     + "\n3. Examine a Stack"
-                    + "\n4. CheckParenthesis"
+                    + "\n4. Examine a Stack (Reverse text)"
+                    + "\n5. CheckParenthesis"
                     + "\n0. Exit the application");
                 char input = ' '; //Creates the character input to be used with the switch-case below.
                 try
@@ -38,9 +39,12 @@ namespace SkalProj_Datastrukturer_Minne
                         ExamineQueue.ExamineQueueMethod();
                         break;
                     case '3':
-                        ExamineStack();
+                        ExamineStack.ExamineStackMethod();
                         break;
                     case '4':
+                        ExamineStack.ReverseText();
+                        break;
+                    case '5':
                         CheckParanthesis();
                         break;
                     /*
@@ -51,27 +55,12 @@ namespace SkalProj_Datastrukturer_Minne
                         Environment.Exit(0);
                         break;
                     default:
-                        Console.WriteLine("Please enter some valid input (0, 1, 2, 3, 4)");
+                        Console.WriteLine("Please enter some valid input (0, 1, 2, 3, 4, 5)");
                         break;
                 }
             }
         }
 
-
-
-
-
-        /// <summary>
-        /// Examines the datastructure Stack
-        /// </summary>
-        static void ExamineStack()
-        {
-            /*
-             * Loop this method until the user inputs something to exit to main menue.
-             * Create a switch with cases to push or pop items
-             * Make sure to look at the stack after pushing and and poping to see how it behaves
-            */
-        }
 
         static void CheckParanthesis()
         {
