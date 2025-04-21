@@ -26,7 +26,7 @@ namespace SkalProj_Datastrukturer_Minne
             */
 
             Console.WriteLine("Welcome to the List examination program!");
-            List<string> theList = new List<string>();
+            List<string> theList = new List<string>(); // This is a list that will hold strings.
             while (true)
             {
                 Console.WriteLine("Please enter a command (+ to add, - to remove) followed by a value (e.g., +Olena or -Olena).");

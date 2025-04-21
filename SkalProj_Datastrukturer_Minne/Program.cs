@@ -35,7 +35,7 @@ namespace SkalProj_Datastrukturer_Minne
                         ExamineList.ExamineListMethod();
                         break;
                     case '2':
-                        ExamineQueue();
+                        ExamineQueue.ExamineQueueMethod();
                         break;
                     case '3':
                         ExamineStack();
@@ -57,19 +57,9 @@ namespace SkalProj_Datastrukturer_Minne
             }
         }
 
-  
 
-        /// <summary>
-        /// Examines the datastructure Queue
-        /// </summary>
-        static void ExamineQueue()
-        {
-            /*
-             * Loop this method untill the user inputs something to exit to main menue.
-             * Create a switch with cases to enqueue items or dequeue items
-             * Make sure to look at the queue after Enqueueing and Dequeueing to see how it behaves
-            */
-        }
+
+
 
         /// <summary>
         /// Examines the datastructure Stack
