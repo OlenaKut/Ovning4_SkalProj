@@ -13,12 +13,13 @@ namespace SkalProj_Datastrukturer_Minne
 
             while (true)
             {
-                Console.WriteLine("Please navigate through the menu by inputting the number \n(1, 2, 3 ,4, 5, 0) of your choice"
+                Console.WriteLine("Please navigate through the menu by inputting the number \n(1, 2, 3 ,4, 5, 6, 0) of your choice"
                     + "\n1. Examine a List"
                     + "\n2. Examine a Queue"
                     + "\n3. Examine a Stack"
                     + "\n4. Examine a Stack (Reverse text)"
                     + "\n5. CheckParenthesis"
+                    + "\n6. RecursionTask"
                     + "\n0. Exit the application");
                 char input = ' '; //Creates the character input to be used with the switch-case below.
                 try
@@ -47,15 +48,15 @@ namespace SkalProj_Datastrukturer_Minne
                     case '5':
                         CheckParanthesis.CheckParanthesisMethod();
                         break;
-                    /*
-                     * Extend the menu to include the recursive 
-                     * and iterative exercises.
-                     */
+                    case '6':
+                        RecursionTask.RecursionTaskMethod();
+                        break;
+
                     case '0':
                         Environment.Exit(0);
                         break;
                     default:
-                        Console.WriteLine("Please enter some valid input (0, 1, 2, 3, 4, 5)");
+                        Console.WriteLine("Please enter some valid input (0, 1, 2, 3, 4, 5, 6)");
                         break;
                 }
             }
