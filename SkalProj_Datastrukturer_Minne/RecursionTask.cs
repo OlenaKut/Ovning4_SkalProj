@@ -8,7 +8,7 @@ namespace SkalProj_Datastrukturer_Minne
             Console.WriteLine("This is a test for the recursion task");
             while (true)
             {
-                Console.WriteLine("Print a number");
+                Console.WriteLine("Type a number");
                 Console.WriteLine("Type 0 to exit to main menu.");
                 string input = Console.ReadLine() ?? string.Empty;
 
